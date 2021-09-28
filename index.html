@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Shayna Template" />
+    <meta name="keywords" content="Shayna, unica, creative, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ProductZone App</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/58/000000/external-shirt-tropical-vitaliy-gorbachev-flat-vitaly-gorbachev.png"/>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/themify-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+            
+        img {
+            border-radius: 10px;
+        }
+
+        .primary-btn {
+            border-radius: 8px;
+            border: 2px solid #000;
+        }
+
+        .primary-btn:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            background-color: #ffff;
+            color: #000;
+            border: 2px solid #000;
+        }
+
+        .header {
+            width: 100%;
+            margin: auto;
+            height: auto;
+            text-align: center;
+            background: #f8f8f8;
+            color: black;
+            position: fixed; 
+            top: 0;
+        } 
+
+        .menu a {
+            padding: 0px 36px;
+            text-decoration: none;
+            display: inline-block;
+            border: 2px solid #f8f8f8;
+        }
+
+        .menu a:hover {
+            border: 2px solid black;
+        }
+
+        .header a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .product-section {
+            margin-top: 120px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container">
+          <a class="navbar-brand" href="#">ProductZone</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="inner-header">
+                        <ul class="nav-right">
+                            <li class="cart-icon">
+                                <a href="#">
+                                    <i class="icon_cart_alt" style="color: #ffff;"></i>
+                                    <span>3</span>
+                                </a>
+                                <div class="cart-hover">
+                                    <div class="select-items">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="si-pic">
+                                                        <img src="img/select-product-1.jpg" alt="" />
+                                                    </td>
+                                                    <td class="si-text">
+                                                        <div class="product-selected">
+                                                            <p>Rp120.000 x 1</p>
+                                                            <h6>Casual Jacket</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="si-close">
+                                                        <i class="ti-close"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="si-pic">
+                                                        <img src="img/select-product-2.jpg" alt="" />
+                                                    </td>
+                                                    <td class="si-text">
+                                                        <div class="product-selected">
+                                                            <p>Rp120.000 x 1</p>
+                                                            <h6>Yellow Shirt</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="si-close">
+                                                        <i class="ti-close"></i>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="select-total">
+                                        <span>total:</span>
+                                        <h5>Rp240.000</h5>
+                                    </div>
+                                    <div class="select-button">
+                                        <!-- <a href="#" class="primary-btn view-card">VIEW CARD</a> -->
+                                        <a href="shopping-cart.html" class="primary-btn checkout-btn">CHECK OUT</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Product Shop Section Begin -->
+    <div class="product-section">
+        <div class="card mx-5 my-5">
+            <section class="product-shop spad page-details">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="product-pic-zoom">
+                                        <img class="product-big-img" src="img/product-single/tab-desc.jpg" alt="" />
+                                    </div>
+                                    <div>
+                                        <div class="ps-slider owl-carousel">
+                                            <div class="pt active" data-imgbigurl="img/product-single/tab-desc.jpg">
+                                                <img src="img/product-single/tab-desc.jpg" alt="" />
+                                            </div>
+        
+                                            <div class="pt" data-imgbigurl="img/product-single/tab-desc.jpg">
+                                                <img src="img/product-single/tab-desc.jpg" alt="" />
+                                            </div>
+        
+                                            <div class="pt" data-imgbigurl="img/product-single/tab-desc.jpg">
+                                                <img src="img/product-single/tab-desc.jpg" alt="" />
+                                            </div>
+        
+                                            <div class="pt" data-imgbigurl="img/product-single/tab-desc.jpg">
+                                                <img src="img/product-single/tab-desc.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="product-details">
+                                        <div class="pd-title">
+                                            <span>Shirt</span>
+                                            <h3>Classic Style</h3>
+                                        </div>
+                                        <div class="pd-desc px-2" style="text-align: justify;">
+                                            <p>
+                                                <b>Bahan : </b>Kain Linen <br>
+                                                <b>Warna : </b>Abu-abu <br>
+                                            </p>
+                                            <p>
+                                                Lengkapi style kamu dengan baju classic terbaru. Karakteristik bahan yaitu kain linen yang sangat identik dengan sifat lembut dan dingin ketika digunakan.
+                                                Bahan pakaian ini juga memiliki serat yang lebih kuat dari kain katun.
+                                            </p>
+                                            <h4>Rp200.000</h4>
+                                        </div>
+                                        <div class="quantity">
+                                            <a href="shopping-cart.html" class="primary-btn pd-cart">Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="card mx-5 my-5">
+            <section class="product-shop spad page-details">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="product-pic-zoom">
+                                        <img class="product-big-img" src="img/product-single/product-1.jpg" alt="" />
+                                    </div>
+                                    <div>
+                                        <div class="ps-slider owl-carousel">
+                                            <div class="pt active" data-imgbigurl="img/product-single/product-1.jpg">
+                                                <img src="img/product-single/product-1.jpg" alt="" />
+                                            </div>
+        
+                                            <div class="pt" data-imgbigurl="img/product-single/product-1.jpg">
+                                                <img src="img/product-single/product-1.jpg" alt="" />
+                                            </div>
+        
+                                            <div class="pt" data-imgbigurl="img/product-single/product-1.jpg">
+                                                <img src="img/product-single/product-1.jpg" alt="" />
+                                            </div>
+        
+                                            <div class="pt" data-imgbigurl="img/product-single/product-1.jpg">
+                                                <img src="img/product-single/product-1.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="product-details">
+                                        <div class="pd-title">
+                                            <span>Jacket</span>
+                                            <h3>Casual Jacket</h3>
+                                        </div>
+                                        <div class="pd-desc" style="text-align: justify; padding-right: 15px;">
+                                            <p>
+                                                <b>Bahan : </b>Kain Polyester <br>
+                                                <b>Warna : </b>Toska <br>
+                                            </p>
+                                            <p>
+                                                Model jaket terbaru yang bikin kamu makin kece abis. Harga terjangkau dan bahan kain ini tidak mudah kusut.
+                                            </p>
+                                            <h4>Rp350.000</h4>
+                                        </div>
+                                        <div class="quantity">
+                                            <a href="shopping-cart.html" class="primary-btn pd-cart">Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="card mx-5 my-5">
+            <section class="product-shop spad page-details">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="product-pic-zoom">
+                                        <img class="product-big-img" src="img/products/man-large.jpg" alt="" />
+                                    </div>
+                                    <div>
+                                        <div class="ps-slider owl-carousel">
+                                            <div class="pt active" data-imgbigurl="img/products/man-large.jpg">
+                                                <img src="img/products/man-large.jpg" alt="" />
+                                            </div>
+        
+                                            <div class="pt" data-imgbigurl="img/products/man-large.jpg">
+                                                <img src="img/products/man-large.jpg" alt="" />
+                                            </div>
+        
+                                            <div class="pt" data-imgbigurl="img/products/man-large.jpg">
+                                                <img src="img/products/man-large.jpg" alt="" />
+                                            </div>
+        
+                                            <div class="pt" data-imgbigurl="img/products/man-large.jpg">
+                                                <img src="img/products/man-large.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="product-details">
+                                        <div class="pd-title">
+                                            <span>Jacket</span>
+                                            <h3>Korean Style</h3>
+                                        </div>
+                                        <div class="pd-desc" style="text-align: justify; padding-right: 15px;">
+                                            <p>
+                                                <b>Bahan : </b>Kain Katun <br>
+                                                <b>Warna : </b>Copper <br>
+                                            </p>
+                                            <p>
+                                                Nikmati gaya terbaru layaknya artis korea. Dengan style jaket ini kamu bisa tampil makin keren di hadapan siapapun. Pesan sekarang juga!
+                                            </p>
+                                            <h4>Rp495.000</h4>
+                                        </div>
+                                        <div class="quantity">
+                                            <a href="shopping-cart.html" class="primary-btn pd-cart">Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- Product Shop Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer>
+        <div class="copyright-reserved">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright-text">
+                            Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                             | Christopher Baptista
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.dd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
